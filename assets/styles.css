@@ -4,6 +4,7 @@
  -webkit-text-size-adjust:100%
 }
 body {
+ font-family: 'Jost', sans-serif;
  margin:0
 }
 footer,
@@ -31,7 +32,7 @@ svg:not(:root) {
 }
 input,
 textarea {
- font-family:sans-serif;
+ font-family: 'Jost', sans-serif;
  font-size:100%;
  line-height:1.15;
  margin:0
@@ -90,7 +91,7 @@ textarea {
 html {
  -webkit-box-sizing:border-box;
  box-sizing:border-box;
- font-family:sans-serif
+ font-family: 'Jost', sans-serif
 }
 *,
 :after,
@@ -202,7 +203,8 @@ svg {
 }
 .btn,
 .section-header {
- font-family:Source Sans Pro,sans-serif;
+ /*font-family:Source Sans Pro,sans-serif;*/
+ font-family: 'Jost', sans-serif;
  font-weight:600
 }
 .btn {
@@ -277,7 +279,8 @@ svg {
  .contact {
   width:auto;
   height:auto;
-  font-family:Source Sans Pro,sans-serif;
+  /*font-family:Source Sans Pro,sans-serif;*/
+  font-family: 'Jost', sans-serif;
   display:inline-block;
   text-decoration:none;
   font-weight:600;
@@ -358,7 +361,8 @@ svg {
  position:relative;
  border-radius:9999px;
  border-width:2px;
- font-family:Source Sans Pro,sans-serif;
+ /*font-family:Source Sans Pro,sans-serif;*/
+ font-family: 'Jost', sans-serif;
  font-weight:600;
  display:-webkit-inline-box;
  display:-ms-inline-flexbox;
@@ -436,7 +440,8 @@ svg {
  -moz-osx-font-smoothing:auto;
  background-color:#eee841;
  padding:.25rem .75rem;
- font-family:Source Sans Pro,sans-serif;
+ /*font-family:Source Sans Pro,sans-serif;*/
+ font-family: 'Jost', sans-serif
  font-weight:300;
  font-size:1.5rem;
  color:#1f1f1f;
@@ -580,7 +585,8 @@ svg {
  width:100%;
  color:#1f1f1f;
  padding:.75rem 1rem;
- font-family:Source Sans Pro,sans-serif;
+ /*font-family:Source Sans Pro,sans-serif;*/
+ font-family: 'Jost', sans-serif;
  font-weight:600;
  font-size:.875rem;
  outline:0;
@@ -792,10 +798,12 @@ svg {
  justify-content:space-between
 }
 .font-header {
- font-family:Source Sans Pro,sans-serif
+ /*font-family:Source Sans Pro,sans-serif*/
+ font-family: 'Jost', sans-serif 
 }
 .font-text {
- font-family:Roboto,sans-serif
+ /*font-family:Roboto,sans-serif*/
+ font-family: 'Jost', sans-serif 
 }
 .font-light {
  font-weight:300
