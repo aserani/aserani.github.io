@@ -195,7 +195,7 @@ svg {
 }
 .fill-lead {
  /*fill:#eee841*/
- fiil:#41ee5e
+ fiil:#04AA6D
 }
 .section-header {
  color:#1f1f1f;
@@ -267,7 +267,7 @@ svg {
  padding-left:.5rem;
  padding-right:.5rem;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  border-radius:9999px;
  color:#1f1f1f;
  -webkit-box-pack:center;
@@ -309,7 +309,7 @@ svg {
  left:0;
  border-radius:9999px;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  z-index:0;
  -webkit-transform:translateX(35%);
  transform:translateX(35%)
@@ -442,7 +442,7 @@ svg {
  -webkit-font-smoothing:auto;
  -moz-osx-font-smoothing:auto;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  padding:.25rem .75rem;
  /*font-family:Source Sans Pro,sans-serif;*/
  font-family: 'Jost', sans-serif
@@ -584,7 +584,7 @@ svg {
 }
 .history-entry:first-child .dot-double:after {
  /*background-color:#eee841*/
- background-color:#41ee5e; 
+ background-color:#04AA6D; 
 }
 .form-control {
  width:100%;
@@ -628,7 +628,7 @@ svg {
 }
 .checkbox-on:after {
  /*background-color:#eee841*/
- background-color:#41ee5e; 
+ background-color:#04AA6D; 
 }
 [data-checkbox-toggle] {
  cursor:pointer;
@@ -692,7 +692,7 @@ svg {
  width:1rem;
  height:1rem;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  cursor:pointer;
  outline:0;
  -webkit-transform:translateY(-6.5px);
@@ -704,7 +704,7 @@ svg {
  width:1rem;
  height:1rem;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  cursor:pointer;
  outline:0;
  -webkit-transform:translateY(-6.5px);
@@ -717,7 +717,7 @@ svg {
  width:1rem;
  height:1rem;
  /*background-color:#eee841;*/
- background-color:#41ee5e;
+ background-color:#04AA6D;
  cursor:pointer;
  outline:0;
  -webkit-transform:translateY(-6.5px);
@@ -731,7 +731,7 @@ svg {
 }
 .bg-lead {
  /*background-color:#eee841*/
- background-color:#41ee5e; 
+ background-color:#04AA6D; 
 }
 .border-back {
  border-color:#e8eaef
@@ -974,7 +974,7 @@ svg {
 }
 .text-lead {
  /*color:#eee841*/
- color:#41ee5e; 
+ color:#04AA6D; 
 }
 .text-xs {
  font-size:.75rem
