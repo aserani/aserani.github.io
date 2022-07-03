@@ -25,7 +25,8 @@ strong {
  font-weight:bolder
 }
 img {
- border-style:none
+ border-style:none;
+ margin: auto /*--AS--*/
 }
 svg:not(:root) {
  overflow:hidden
