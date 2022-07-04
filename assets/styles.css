@@ -26,7 +26,7 @@ strong {
 }
 img {
  border-style:none;
- margin: auto /*--AS--*/
+ /*margin: auto --AS--*/
 }
 svg:not(:root) {
  overflow:hidden
@@ -1040,6 +1040,12 @@ svg {
 }
 .w-3\/4 {
  width:75%
+}
+.w-1\/5 {
+ width:20%
+}
+.w-4\/5 {
+ width:80%
 }
 .w-full {
  width:100%
