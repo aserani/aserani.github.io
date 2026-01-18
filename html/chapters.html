@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" type='text/css'>       
-<link rel="stylesheet" href="./assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css">
 <!--	<link rel="stylesheet" href="./assets/style.min.css">-->
 <script src="./assets/scripts.js"></script>
-<link rel="icon" type="image/png" href="./images/MAORG_symbol.png">
+<link rel="icon" type="image/png" href="/images/MAORG_symbol.png">
 <!--<link rel="shortcut icon" href="./imags/MAORG_symbol.png" >     -->
 <meta name="theme-color" content="#eee841">
 <link rel="dns-prefetch" href="//fonts.googleapis.com/">
@@ -176,36 +176,6 @@ M. Diez, <u>A. Serani</u>, C. Leotardi, E.F. Campana, D. Peri, U. Iemma, G. Fasa
 </section>
 
 <div id="site-footer"></div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<script>
-function includeHTML(id, file, callback){
-  fetch(file)
-    .then(r => r.text())
-    .then(t => {
-      document.getElementById(id).innerHTML = t;
-      if (callback) callback();
-    });
-}
-
-includeHTML("site-nav", "/includes/nav.html");
-includeHTML("site-sidebar", "/includes/sidebar.html");
-
-includeHTML("site-footer", "/includes/footer.html", () => {
-  const y = document.getElementById("year");
-  if (y) y.textContent = new Date().getFullYear();
-});
-</script>
 
 <script src="/assets/include.js"></script>
 
