@@ -1250,3 +1250,60 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
+
+.mentee-card{
+  display:flex;
+  gap:16px;
+  padding:14px 0;
+  border-bottom:1px solid rgba(0,0,0,0.12); /* o il tuo colore linea */
+}
+
+.mentee-logo{
+  width:56px;
+  flex:0 0 56px;
+}
+
+.mentee-logo img{
+  width:56px;
+  height:56px;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.mentee-body{ flex:1; }
+
+.mentee-head{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  gap:10px;
+}
+
+.mentee-name{ margin:0; }
+
+.mentee-tag{
+  font-size:0.8rem;
+  padding:2px 8px;
+  border:1px solid rgba(0,0,0,0.18);
+  border-radius:999px;
+}
+
+.mentee-years, .mentee-role{
+  font-size:0.85rem;
+  opacity:0.75;
+}
+
+.mentee-affil{
+  margin-top:4px;
+  opacity:0.85;
+}
+
+.mentee-topic{
+  margin-top:6px;
+}
+
+.mentee-meta{
+  margin-top:8px;
+  opacity:0.9;
+}
+
