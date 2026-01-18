@@ -625,42 +625,10 @@ L. Seelinger, A. Reinarz, M.B. Lykkegaard, R. Akers, A.M. Alghamdi, D. Aristoff,
                 </table> 
 
 </div>
-	
 </section>
 
 <div id="site-footer"></div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-
-<script>
-function includeHTML(id, file, callback){
-  fetch(file)
-    .then(r => r.text())
-    .then(t => {
-      document.getElementById(id).innerHTML = t;
-      if (callback) callback();
-    });
-}
-
-includeHTML("site-nav", "/includes/nav.html");
-includeHTML("site-sidebar", "/includes/sidebar.html");
-
-includeHTML("site-footer", "/includes/footer.html", () => {
-  const y = document.getElementById("year");
-  if (y) y.textContent = new Date().getFullYear();
-});
-</script>
-
 <script src="/assets/include.js"></script>
-
 </body>
 </html>
