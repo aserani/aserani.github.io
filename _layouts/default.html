@@ -4,13 +4,36 @@
   {% include head.html %}
 </head>
 
-<body class="{{ page.body_class }}">
+<body class="{{ page.body_class | default: '' }}">
 
-  {% include nav.html %}
+  <!-- NAV (sempre) -->
+  <div id="site-nav">
+    {% include nav.html %}
+  </div>
 
-  {{ content }}
+  <!-- CONTENUTO PAGINA -->
+  {% if page.show_sidebar %}
+  <section class="container flex flex-wrap items-stretch pt-4 my-8">
 
-  {% include footer.html %}
+    <div class="w-full lg:w-1/3 lg:border-r border-line lg:px-8 xl:px-12">
+      <div id="site-sidebar" class="h-full">
+        {% include sidebar.html %}
+      </div>
+    </div>
+
+    <div class="w-full lg:w-2/3 lg:pl-8 xl:pl-12">
+      {{ content }}
+    </div>
+
+  </section>
+  {% else %}
+    {{ content }}
+  {% endif %}
+
+  <!-- FOOTER (sempre) -->
+  <div id="site-footer">
+    {% include footer.html %}
+  </div>
 
 </body>
 </html>
