@@ -1311,11 +1311,11 @@ div.container {
 /* ===== Publications numbering with [n] ===== */
 
 body {
-  counter-reset: pub 100;  /* ← metti il numero totale dei paper */
+  counter-reset: pub;  /* ← metti il numero totale dei paper */
 }
 
 .cp-num::before {
-  counter-increment: pub -1;
+  counter-increment: pub;
   content: "[" counter(pub) "] ";
   display: inline-block;
   width: 2.5em;   /* larghezza fissa numero */
@@ -1324,7 +1324,7 @@ body {
 /* Hanging indent for publication entries */
 
 .borderless .font-text {
-  padding-left: 3em;   /* spazio per il numero */
-  text-indent: -3em;   /* riporta la prima riga a sinistra */
+  padding-left: 1em;   /* spazio per il numero */
+  text-indent: -1em;   /* riporta la prima riga a sinistra */
 }
 
