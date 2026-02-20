@@ -1311,11 +1311,11 @@ div.container {
 /* ===== Publications numbering with [n] ===== */
 
 body {
-  counter-reset: pub;
+  counter-reset: pub 100;  /* ← metti il numero totale dei paper */
 }
 
 .cp-num::before {
-  counter-increment: pub;
+  counter-increment: pub -1;
   content: "[" counter(pub) "] ";
   display: inline-block;
   width: 2.5em;   /* larghezza fissa numero */
