@@ -1308,3 +1308,13 @@ div.container {
   opacity:0.9;
 }
 
+/* === Publications auto-numbering === */
+body {
+  counter-reset: pub;
+}
+
+.cp-num::before {
+  counter-increment: pub;
+  content: counter(pub) ". ";
+}
+
