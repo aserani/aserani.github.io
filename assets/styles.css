@@ -1137,8 +1137,9 @@ svg {
 }
 
 .topnav {
-  overflow: visible;
   background-color: #333;
+  overflow: visible;
+  display: flow-root;
 }
 
 .topnav a {
