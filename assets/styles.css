@@ -1308,27 +1308,5 @@ div.container {
   opacity:0.9;
 }
 
-/* ===== Publications numbering with [n] ===== */
 
-.cp-num::before { content: "" !important; }
-
-.cp-num::before {
-  display: inline-block;
-  width: 2.5em;   /* larghezza fissa numero */
-}
-
-/* Hanging indent for publication entries */
-
-.borderless .font-text {
-  padding-left: 1.5em;   /* spazio per il numero */
-  text-indent: -4.5em;   /* riporta la prima riga a sinistra */
-}
-
-.borderless .font-text a[href*="doi.org"]{
-  white-space: nowrap;
-  display: inline-block; /* evita che si comporti “strano” a capo */
-}
-.borderless .font-text .sep{
-  white-space: nowrap;
-}
 
