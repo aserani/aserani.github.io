@@ -33,6 +33,23 @@ function setActiveMenu() {
   });
 }
 
+
+function renumberPublicationsOldestIsOne() {
+  const nums = Array.from(document.querySelectorAll(".cp-num"));
+  const n = nums.length;
+  if (!n) return;
+
+  // Se la lista nel file è newest-first (come la tua), allora:
+  // primo elemento visualizzato = più recente -> deve avere [n]
+  // ultimo elemento visualizzato = più vecchio -> deve avere [1]
+  nums.forEach((el, i) => {
+    const k = n - i;          // reverse numbering
+    el.textContent = `[${k}] `;
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  // ... le tue altre init (setActiveMenu, ecc.)
   setActiveMenu();
+  renumberPublicationsOldestIsOne();
 });
