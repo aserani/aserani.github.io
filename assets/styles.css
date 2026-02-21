@@ -1314,13 +1314,13 @@ div.container {
 
 .cp-num::before {
   display: inline-block;
-  width: 2em;   /* larghezza fissa numero */
+  width: 2.5em;   /* larghezza fissa numero */
 }
 
 /* Hanging indent for publication entries */
 
 .borderless .font-text {
   padding-left: 1.5em;   /* spazio per il numero */
-  text-indent: -1.5em;   /* riporta la prima riga a sinistra */
+  text-indent: -3.0em;   /* riporta la prima riga a sinistra */
 }
 
