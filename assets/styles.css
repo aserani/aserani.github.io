@@ -1310,13 +1310,9 @@ div.container {
 
 /* ===== Publications numbering with [n] ===== */
 
-body {
-  counter-reset: pub;  /* ← metti il numero totale dei paper */
-}
+.cp-num::before { content: "" !important; }
 
 .cp-num::before {
-  counter-increment: pub;
-  content: "[" counter(pub) "] ";
   display: inline-block;
   width: 2em;   /* larghezza fissa numero */
 }
