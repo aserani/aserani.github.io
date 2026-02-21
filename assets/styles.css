@@ -1321,6 +1321,6 @@ div.container {
 
 .borderless .font-text {
   padding-left: 1.5em;   /* spazio per il numero */
-  text-indent: -3.0em;   /* riporta la prima riga a sinistra */
+  text-indent: -5.0em;   /* riporta la prima riga a sinistra */
 }
 
