@@ -1321,6 +1321,14 @@ div.container {
 
 .borderless .font-text {
   padding-left: 1.5em;   /* spazio per il numero */
-  text-indent: -5.0em;   /* riporta la prima riga a sinistra */
+  text-indent: -4.5em;   /* riporta la prima riga a sinistra */
+}
+
+.borderless .font-text a[href*="doi.org"]{
+  white-space: nowrap;
+  display: inline-block; /* evita che si comporti “strano” a capo */
+}
+.borderless .font-text .sep{
+  white-space: nowrap;
 }
 
