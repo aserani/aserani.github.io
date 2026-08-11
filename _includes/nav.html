@@ -1,52 +1,25 @@
-<header>
-  <!-- The navigation menu -->
-  <div class="topnav" id="myTopnav">
+<header class="site-header" data-site-header>
+  <div class="nav-shell">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Andrea Serani, home">
+      <span class="brand-mark" aria-hidden="true">AS</span>
+      <span class="brand-copy">
+        <strong>Andrea Serani</strong>
+        <span>Computational engineering</span>
+      </span>
+    </a>
 
-    <a href="/index.html">Home</a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="nav-toggle__label">Menu</span>
+      <span class="nav-toggle__icon" aria-hidden="true"></span>
+    </button>
 
-    <div class="dropdown">
-      <button class="dropbtn">Experience
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/html/work.html">Work Experience</a>
-        <a href="/html/education.html">Education</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">Publications
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/html/articles.html">Journal Articles</a>
-        <a href="/html/chapters.html">Book Chapters</a>
-        <a href="/html/proceedings.html">Conference Proceedings</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">Advising & Mentoring
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/html/researchers.html">Researchers</a>
-        <a href="/html/students.html">Students</a>
-      </div>
-    </div>
-
-    <div class="dropdown">
-      <button class="dropbtn">Projects
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="/html/national.html">National</a>
-      </div>
-    </div>
-
-    <a href="/html/software.html">Software</a>
-
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+      <a href="{{ '/html/research.html' | relative_url }}">Research</a>
+      <a href="{{ '/html/publications.html' | relative_url }}">Publications</a>
+      <a href="{{ '/html/mentoring.html' | relative_url }}">Teaching &amp; mentoring</a>
+      <a href="{{ '/html/experience.html' | relative_url }}">Experience</a>
+      <a href="{{ '/html/about.html' | relative_url }}">About</a>
+      <a class="nav-cv" href="{{ '/docs/CV_Serani.pdf' | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+    </nav>
   </div>
 </header>
