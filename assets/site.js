@@ -1,55 +1,45 @@
-// hamburger menu (usa #myTopnav dentro nav.html)
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (!x) return;
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+(function () {
+  const header = document.querySelector("[data-site-header]");
+  const toggle = document.querySelector(".nav-toggle");
+  const navigation = document.querySelector("#primary-navigation");
+
+  if (header && toggle && navigation) {
+    toggle.addEventListener("click", function () {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      header.classList.toggle("nav-open", !isOpen);
+    });
+
+    navigation.addEventListener("click", function (event) {
+      if (event.target.closest("a")) {
+        toggle.setAttribute("aria-expanded", "false");
+        header.classList.remove("nav-open");
+      }
+    });
   }
-}
 
-// active menu + highlight del dropdown padre
-function setActiveMenu() {
-  let currentPath = window.location.pathname;
-  if (currentPath === "/" || currentPath === "") currentPath = "/index.html";
-
-  document.querySelectorAll("#site-nav a").forEach(a => a.classList.remove("active"));
-  document.querySelectorAll("#site-nav .dropbtn").forEach(b => b.classList.remove("active"));
-
-  document.querySelectorAll("#site-nav a").forEach(link => {
-    const href = link.getAttribute("href");
-    if (!href) return;
-
-    const linkPath = new URL(href, window.location.origin).pathname;
-    if (linkPath === currentPath) link.classList.add("active");
-  });
-
-  document.querySelectorAll("#site-nav .dropdown").forEach(drop => {
-    if (drop.querySelector("a.active")) {
-      const btn = drop.querySelector(".dropbtn");
-      if (btn) btn.classList.add("active");
+  const currentPath = window.location.pathname.replace(/index\.html$/, "");
+  const sectionPaths = {
+    "/html/articles.html": "/html/publications.html",
+    "/html/chapters.html": "/html/publications.html",
+    "/html/proceedings.html": "/html/publications.html",
+    "/html/researchers.html": "/html/mentoring.html",
+    "/html/students.html": "/html/mentoring.html",
+    "/html/work.html": "/html/experience.html",
+    "/html/education.html": "/html/experience.html",
+    "/html/software.html": "/html/research.html",
+    "/html/national.html": "/html/projects.html"
+  };
+  const activePath = sectionPaths[currentPath] || currentPath;
+  document.querySelectorAll(".primary-nav a").forEach(function (link) {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/index\.html$/, "");
+    if (linkPath === activePath) {
+      link.setAttribute("aria-current", "page");
     }
   });
-}
 
-
-function renumberPublicationsOldestIsOne() {
-  const nums = Array.from(document.querySelectorAll(".cp-num"));
-  const n = nums.length;
-  if (!n) return;
-
-  // Se la lista nel file è newest-first (come la tua), allora:
-  // primo elemento visualizzato = più recente -> deve avere [n]
-  // ultimo elemento visualizzato = più vecchio -> deve avere [1]
-  nums.forEach((el, i) => {
-    const k = n - i;          // reverse numbering
-    el.textContent = `[${k}] `;
+  const publicationNumbers = Array.from(document.querySelectorAll(".cp-num"));
+  publicationNumbers.forEach(function (element, index) {
+    element.textContent = "[" + (publicationNumbers.length - index) + "] ";
   });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  // ... le tue altre init (setActiveMenu, ecc.)
-  setActiveMenu();
-  renumberPublicationsOldestIsOne();
-});
+})();

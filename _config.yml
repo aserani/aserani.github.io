@@ -1,0 +1,24 @@
+title: Andrea Serani
+description: Research Scientist in computational engineering design, simulation-based optimization, design-space learning, and physics-aware machine learning.
+url: https://aserani.github.io
+baseurl: ""
+lang: en
+timezone: Europe/Rome
+
+exclude:
+  - AGENTS.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - includes
+  - assets/include.js
+  - assets/scripts.js
+  - assets/style.min.css
+  - images/index.html
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
