@@ -1,89 +1,57 @@
 ---
 title: Research | Andrea Serani
 heading: Research
-eyebrow: Programme and methods
-description: Andrea Serani's research programme in computational engineering design, design-space learning, physics-aware machine learning, and simulation-based optimization.
-intro: I study computational methods that make complex engineering design spaces easier to understand, explore, and optimize.
-wide: true
+description: Andrea Serani's research in design-space learning, Parametric Model Embedding, physics-aware machine learning, and simulation-based optimization.
+intro: A scientific programme in computational engineering design, linking reduced design-space representations with simulation, learning, and optimization.
 ---
 
-<section class="prose">
-  <p class="lead">The research programme connects simulation-based design optimization with design-space learning, physics-aware machine learning, surrogate and multi-fidelity modelling, optimization under uncertainty, and computational fluid dynamics.</p>
+<div class="research-programme">
+  <section id="pme" class="academic-section academic-section--first">
+    <p class="section-number">01</p>
+    <h2>Design-space learning and Parametric Model Embedding</h2>
+    <p>High-dimensional parameterizations allow engineering geometries to be described with considerable flexibility, but they also increase the cost and difficulty of design exploration and optimization. This research studies compact representations of parametric design spaces that retain the variability required by the engineering problem.</p>
+    <p>Andrea Serani is the lead developer of Parametric Model Embedding (PME). PME constructs a reduced representation while preserving an explicit mapping between reduced coordinates and the original design variables, allowing the established parameterization to remain part of the design workflow.</p>
+    <p class="inline-links"><a href="https://doi.org/10.1016/j.cma.2022.115776">Foundational PME paper <span aria-hidden="true">↗</span></a><a href="https://cnr-inm-mao.github.io/software/pme-toolkit/">PME-toolkit <span aria-hidden="true">↗</span></a></p>
+  </section>
 
-  <ul class="topic-list">
-    <li>Computational engineering design</li>
-    <li>Simulation-based design optimization</li>
-    <li>Design-space learning and dimensionality reduction</li>
-    <li>Physics-aware machine learning</li>
-    <li>Surrogate and multi-fidelity modelling</li>
-    <li>Optimization under uncertainty</li>
-    <li>Computational fluid dynamics</li>
-    <li>Multidisciplinary engineering design</li>
-  </ul>
-</section>
+  <section class="academic-section">
+    <p class="section-number">02</p>
+    <h2>Physics-aware and nonlinear representations</h2>
+    <p>The PME research line extends dimensionality reduction beyond geometric information alone. Physics-informed formulations incorporate physical observables into the embedding, while physics-driven developments use physical evidence to guide the representation of the design space.</p>
+    <p>Current work investigates nonlinear extensions of PME and design-manifold learning. The objective is to represent nonlinear structure in complex design spaces while maintaining a usable relationship with the engineering parameterization and the quantities needed for analysis and optimization.</p>
+    <p class="inline-links"><a href="{{ '/html/projects.html#beam' | relative_url }}">Related project: BEAM <span aria-hidden="true">→</span></a></p>
+  </section>
 
-<section id="pme" class="content-section" aria-labelledby="research-pme-title">
-  <div class="method-panel">
-    <div>
-      <p class="section-label">PME research line</p>
-      <h2 id="research-pme-title">Learning structure in parametric models</h2>
-      <p>Andrea Serani is the lead developer of Parametric Model Embedding (PME). The research line develops from the original formulation toward representations that incorporate physical information and nonlinear design-space structure.</p>
-      <div class="card-links">
-        <a class="button" href="https://doi.org/10.1016/j.cma.2022.115776">Foundational paper <span aria-hidden="true">↗</span></a>
-        <a class="button button--secondary" href="{{ '/html/software.html' | relative_url }}">PME-toolkit <span aria-hidden="true">→</span></a>
-      </div>
-    </div>
-    <ol class="method-path">
-      <li><strong>PME</strong><span>Parametric Model Embedding</span></li>
-      <li><strong>Physics-informed PME</strong><span>Extending the embedding with physical information</span></li>
-      <li><strong>Physics-driven PME</strong><span>Using physics to guide design-space representation</span></li>
-      <li><strong>Nonlinear PME</strong><span>Investigating nonlinear reduced representations</span></li>
-      <li><strong>Design-space manifolds</strong><span>Research on nonlinear design spaces</span></li>
-    </ol>
-  </div>
-</section>
+  <section class="academic-section">
+    <p class="section-number">03</p>
+    <h2>Simulation-based, surrogate and multi-fidelity optimization</h2>
+    <p>Simulation-based design optimization often relies on computationally expensive analyses. This research develops surrogate modelling, adaptive sampling, and multi-fidelity strategies that combine information from simulations with different costs and accuracies.</p>
+    <p>The programme also addresses uncertainty in operating conditions and computational outputs. These methods support design decisions in problems where direct high-fidelity exploration is impractical, particularly in multidisciplinary vehicle design.</p>
+  </section>
 
-<section class="content-section" aria-labelledby="themes-title">
-  <div class="section-heading">
-    <div>
-      <p class="section-label">Connected themes</p>
-      <h2 id="themes-title">Methods for computational design</h2>
-    </div>
-    <p>The programme spans methodological development and engineering application, with design decisions remaining the common focus.</p>
-  </div>
+  <section class="academic-section">
+    <p class="section-number">04</p>
+    <h2>Scientific machine learning and reduced-order approaches</h2>
+    <p>Scientific machine learning is used to integrate geometry, physical information, simulation data, and predictive models. The work includes reduced representations for design exploration, data-driven models for engineering analysis, and methods that connect learning with optimization rather than treating prediction as an isolated task.</p>
+    <p>Related research includes reduced-order and time-series approaches for computational engineering problems, with an emphasis on interpretable representations and their role in design decisions.</p>
+  </section>
 
-  <div class="research-grid">
-    <article class="research-card">
-      <h3>Reduced design spaces</h3>
-      <p>Methods for identifying compact representations of high-dimensional parametric shapes and engineering models.</p>
-    </article>
-    <article class="research-card">
-      <h3>Surrogates and multiple fidelities</h3>
-      <p>Adaptive modelling strategies for combining evidence from simulations with different computational costs.</p>
-    </article>
-    <article class="research-card">
-      <h3>Uncertainty and robustness</h3>
-      <p>Optimization methods for design problems affected by uncertain operating conditions and computational outputs.</p>
-    </article>
-    <article class="research-card">
-      <h3>Engineering applications</h3>
-      <p>Computational fluid dynamics and multidisciplinary applications across marine, aeronautical, and structural design.</p>
-    </article>
-  </div>
-</section>
+  <section class="academic-section">
+    <p class="section-number">05</p>
+    <h2>Engineering applications</h2>
+    <p>The methods are studied through applications in marine, naval, underwater, and aerospace vehicle design. These problems combine computational fluid dynamics, geometric parameterization, multiple physical disciplines, uncertain conditions, and competing design objectives.</p>
+    <p>Collaborative projects, group software, datasets, and opportunities are maintained by the <a href="https://cnr-inm-mao.github.io/">MAO Research Group</a>.</p>
+    <p class="inline-links"><a href="{{ '/html/projects.html#biodrones' | relative_url }}">Underwater vehicle research: BIODRONES <span aria-hidden="true">→</span></a></p>
+  </section>
 
-<section class="content-section" aria-labelledby="research-links-title">
-  <div class="callout">
-    <div>
-      <p class="section-label">Research record</p>
-      <h2 id="research-links-title">Continue into the work</h2>
-    </div>
-    <div>
-      <p>Explore selected and complete publication lists on this site. Group software, datasets, collective outputs, and opportunities remain on the MAO Research Group website.</p>
-      <div class="card-links">
-        <a class="link-arrow" href="{{ '/html/publications.html' | relative_url }}">Publications <span aria-hidden="true">→</span></a>
-        <a class="link-arrow" href="https://cnr-inm-mao.github.io/">MAO Research Group <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </div>
-</section>
+  <section class="academic-section" aria-labelledby="research-references-title">
+    <h2 id="research-references-title">Selected references</h2>
+    <ul class="reference-list">
+      <li><span>2026</span><a href="https://doi.org/10.1016/j.apor.2026.104932">Physics-informed dimensionality reduction for propeller shape optimization</a></li>
+      <li><span>2025</span><a href="https://doi.org/10.1007/s00366-025-02211-2">Extending Parametric Model Embedding with Physical Information for Design-Space Dimensionality Reduction in Shape Optimization</a></li>
+      <li><span>2025</span><a href="https://doi.org/10.1007/s11831-025-10349-x">A Survey on Design-Space Dimensionality Reduction Methods for Shape Optimization</a></li>
+      <li><span>2023</span><a href="https://doi.org/10.1016/j.cma.2022.115776">Parametric model embedding</a></li>
+    </ul>
+    <p class="section-link"><a href="{{ '/html/publications.html' | relative_url }}">All publications <span aria-hidden="true">→</span></a></p>
+  </section>
+</div>

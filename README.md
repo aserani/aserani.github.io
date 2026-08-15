@@ -22,7 +22,7 @@ rbenv install -s
 gem install bundler
 bundle config set --local path vendor/bundle
 bundle install
-bundle exec jekyll serve --livereload
+LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll serve --livereload
 ```
 
 Open <http://127.0.0.1:4000/>. The preview rebuilds when source files change.
@@ -34,7 +34,7 @@ The setup uses an `rbenv`-managed Ruby and repository-local gems; it does not mo
 Build the production site and check local links before completing a substantial change:
 
 ```bash
-bundle exec jekyll build --trace
+LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 bundle exec jekyll build --trace
 ruby scripts/check_internal_links.rb _site
 ```
 

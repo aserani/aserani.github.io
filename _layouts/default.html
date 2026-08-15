@@ -8,10 +8,9 @@
     {% include nav.html %}
 
     <main id="main-content" class="site-main">
-      {% if page.full_width %}
-        {{ content }}
-      {% else %}
-        <div class="page-shell{% if page.wide %} page-shell--wide{% endif %}">
+      <div class="academic-layout">
+        {% include profile-sidebar.html %}
+        <div class="academic-content{% if page.wide %} academic-content--wide{% endif %}">
           {% unless page.hide_page_header %}
             <header class="page-header">
               {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
@@ -23,7 +22,7 @@
             {{ content }}
           </div>
         </div>
-      {% endif %}
+      </div>
     </main>
 
     {% include footer.html %}

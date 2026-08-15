@@ -28,7 +28,7 @@
     "/html/work.html": "/html/experience.html",
     "/html/education.html": "/html/experience.html",
     "/html/software.html": "/html/research.html",
-    "/html/national.html": "/html/experience.html"
+    "/html/national.html": "/html/projects.html"
   };
   const activePath = sectionPaths[currentPath] || currentPath;
   document.querySelectorAll(".primary-nav a").forEach(function (link) {

@@ -1,111 +1,79 @@
 ---
 layout: default
 title: Andrea Serani | Computational Engineering Design
-description: Personal academic website of Andrea Serani, Research Scientist at CNR-INM working on simulation-based design optimization, design-space learning, and physics-aware machine learning.
-full_width: true
+description: Academic profile of Andrea Serani, Research Scientist at CNR-INM working on computational engineering design, simulation-based optimization, and design-space learning.
+hide_page_header: true
 ---
 
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-grid">
-    <div>
-      <p class="eyebrow">Computational engineering design</p>
-      <h1 id="hero-title">Making complex design spaces intelligible.</h1>
-      <p class="hero-lede">I develop methods that connect physics, simulation, and learning to make engineering design optimization more efficient and interpretable.</p>
-      <div class="hero-actions">
-        <a class="button" href="{{ '/html/research.html' | relative_url }}">Explore the research <span aria-hidden="true">→</span></a>
-        <a class="button button--secondary" href="{{ '/html/publications.html' | relative_url }}">Selected publications</a>
-      </div>
-    </div>
+<section class="academic-section academic-section--first" aria-labelledby="biography-title">
+  <h2 id="biography-title">Biography</h2>
 
-    <figure class="portrait-frame">
-      <img src="{{ '/images/Serani.jpg' | relative_url }}" alt="Portrait of Andrea Serani" width="720" height="900" decoding="async" fetchpriority="high">
-      <figcaption class="portrait-caption">
-        <span>Andrea Serani</span>
-        <span>Rome, Italy</span>
-      </figcaption>
-    </figure>
+  <p>Andrea Serani is a Research Scientist at the Institute of Marine Engineering of the National Research Council of Italy (CNR-INM), where he works on computational engineering design. His research addresses simulation-based design optimization, design-space learning and dimensionality reduction, physics-aware machine learning, surrogate and multi-fidelity modelling, optimization under uncertainty, computational fluid dynamics, and multidisciplinary vehicle design.</p>
+
+  <p>He is the lead developer of Parametric Model Embedding (PME), a methodology for constructing reduced representations of parametric design spaces while retaining a mapping to the original design variables. This research line has developed from the original PME formulation toward physics-informed and physics-driven dimensionality reduction, nonlinear reduced representations, and design-manifold learning.</p>
+
+  <p>Serani has contributed to the NATO Science and Technology Organization Applied Vehicle Technology Panel since 2013 and serves as Co-Chair of the AVT-404 Research Task Group on Machine Learning and Artificial Intelligence for Vehicle Design. In 2026, he received the NATO STO AVT Young Contributor Award for his scientific and technical contributions to the Panel's international activities.</p>
+
+  <p>He is a Visiting Scholar at the University of Michigan, collaborating on computational methods for marine vehicle design, and an Adjunct Professor at the University of Bologna, where he teaches Computer-Aided Yacht Design. His academic activity also includes mentoring graduate students and early-career researchers in computational design, optimization, machine learning, and marine engineering.</p>
+</section>
+
+<section class="academic-section" aria-labelledby="interests-title">
+  <h2 id="interests-title">Research interests</h2>
+  <ul class="interest-list">
+    <li>Simulation-based design optimization</li>
+    <li>Design-space learning and dimensionality reduction</li>
+    <li>Parametric Model Embedding</li>
+    <li>Physics-aware machine learning</li>
+    <li>Surrogate and multi-fidelity modelling</li>
+    <li>Optimization under uncertainty</li>
+    <li>Computational fluid dynamics</li>
+    <li>Multidisciplinary engineering design</li>
+  </ul>
+</section>
+
+<section class="academic-section" aria-labelledby="current-research-title">
+  <h2 id="current-research-title">Current research</h2>
+
+  <div class="research-topic" id="pme">
+    <h3>Parametric Model Embedding and design-space learning</h3>
+    <p>PME supports dimensionality reduction in parametric shape design while preserving an explicit relationship with the original parameterization. Current work extends this foundation through physics-informed and physics-driven formulations and investigates nonlinear reduced representations and design-manifold structure.</p>
+    <p class="inline-links"><a href="{{ '/html/research.html#pme' | relative_url }}">PME research <span aria-hidden="true">→</span></a><a href="https://cnr-inm-mao.github.io/software/pme-toolkit/">PME-toolkit <span aria-hidden="true">↗</span></a></p>
+  </div>
+
+  <div class="research-topic">
+    <h3>Simulation-based and multi-fidelity optimization</h3>
+    <p>This work develops surrogate and adaptive methods that combine simulations at different levels of cost and accuracy. It addresses computationally expensive multidisciplinary design problems, including optimization under uncertain operating conditions and noisy computational outputs.</p>
+  </div>
+
+  <div class="research-topic">
+    <h3>Scientific machine learning for engineering design</h3>
+    <p>The research integrates geometry, physical information, simulations, and data-driven methods to construct reduced and predictive representations for engineering analysis and design. Applications include marine, naval, underwater, and aerospace vehicles.</p>
   </div>
 </section>
 
-<section class="roles-strip" aria-label="Current academic roles">
-  <div class="roles-grid">
-    <div class="role-item">
-      <span>Research</span>
-      <strong>Research Scientist at CNR-INM</strong>
-    </div>
-    <div class="role-item">
-      <span>Teaching</span>
-      <strong>Adjunct Professor at the University of Bologna</strong>
-    </div>
-    <div class="role-item">
-      <span>International collaboration</span>
-      <strong>Visiting Scholar at the University of Michigan</strong>
-    </div>
+<section class="academic-section" aria-labelledby="selected-projects-title">
+  <h2 id="selected-projects-title">Selected projects</h2>
+  <div class="compact-records">
+    <article>
+      <h3><a href="{{ '/html/projects.html#beam' | relative_url }}">BEAM</a></h3>
+      <p>Bayesian exploration and optimization for hull-form architecture and producibility modelling.</p>
+    </article>
+    <article>
+      <h3><a href="{{ '/html/projects.html#biodrones' | relative_url }}">BIODRONES</a></h3>
+      <p>Bio-inspired underwater-glider design through physics-aware dimensionality reduction and multi-fidelity optimization.</p>
+    </article>
   </div>
+  <p class="section-link"><a href="{{ '/html/projects.html' | relative_url }}">All projects <span aria-hidden="true">→</span></a></p>
 </section>
 
-<section class="content-section" aria-labelledby="programme-title">
-  <div class="section-heading">
-    <div>
-      <p class="section-label">Research programme</p>
-      <h2 id="programme-title">From simulation data to better design decisions</h2>
-    </div>
-    <p>My work studies how geometry, physical information, and computational evidence can reveal lower-dimensional structure in difficult engineering design problems.</p>
-  </div>
-
-  <div class="research-grid">
-    <article class="research-card">
-      <h3>Design-space learning</h3>
-      <p>Dimensionality reduction and design-manifold methods for understanding and navigating high-dimensional engineering geometries.</p>
-    </article>
-    <article class="research-card">
-      <h3>Physics-aware machine learning</h3>
-      <p>Learning methods that incorporate physical information to support engineering analysis and optimization.</p>
-    </article>
-    <article class="research-card">
-      <h3>Multi-fidelity modelling</h3>
-      <p>Surrogate and adaptive methods that combine computational models with different levels of cost and accuracy.</p>
-    </article>
-    <article class="research-card">
-      <h3>Simulation-based optimization</h3>
-      <p>Methods for multidisciplinary engineering design, including computational fluid dynamics and uncertainty.</p>
-    </article>
-  </div>
-</section>
-
-<section class="content-section" aria-labelledby="pme-title">
-  <div class="method-panel">
-    <div>
-      <p class="section-label">Methodological focus</p>
-      <h2 id="pme-title">Parametric Model Embedding</h2>
-      <p>I am the lead developer of Parametric Model Embedding (PME), a methodology at the centre of an evolving research line in design-space dimensionality reduction.</p>
-      <a class="button" href="{{ '/html/research.html#pme' | relative_url }}">Follow the research line <span aria-hidden="true">→</span></a>
-    </div>
-    <ol class="method-path">
-      <li><strong>PME</strong><span>Parametric model embedding</span></li>
-      <li><strong>Physics-informed PME</strong><span>Physical information within the embedding process</span></li>
-      <li><strong>Physics-driven PME</strong><span>Physics-led design-space representations</span></li>
-      <li><strong>Nonlinear PME</strong><span>Beyond linear reduced spaces</span></li>
-      <li><strong>Design manifolds</strong><span>Nonlinear design-space research</span></li>
-    </ol>
-  </div>
-</section>
-
-<section class="content-section" aria-labelledby="outputs-title">
-  <div class="section-heading">
-    <div>
-      <p class="section-label">Selected outputs</p>
-      <h2 id="outputs-title">Recent work and methodological foundations</h2>
-    </div>
-    <p>A selection from the publication record, centred on design-space dimensionality reduction and simulation-based engineering design.</p>
-  </div>
-
+<section class="academic-section" aria-labelledby="selected-publications-title">
+  <h2 id="selected-publications-title">Selected publications</h2>
   <div class="publication-list">
     <article class="publication-item">
       <div class="publication-year">2026</div>
       <div class="publication-copy">
         <h3>Physics-informed dimensionality reduction for propeller shape optimization</h3>
-        <p>S. Gaggero and A. Serani · Applied Ocean Research</p>
+        <p>S. Gaggero and A. Serani · Applied Ocean Research, 166, 104932</p>
       </div>
       <a class="publication-link" href="https://doi.org/10.1016/j.apor.2026.104932">DOI <span aria-hidden="true">↗</span></a>
     </article>
@@ -118,49 +86,39 @@ full_width: true
       <a class="publication-link" href="https://doi.org/10.1007/s00366-025-02211-2">DOI <span aria-hidden="true">↗</span></a>
     </article>
     <article class="publication-item">
+      <div class="publication-year">2025</div>
+      <div class="publication-copy">
+        <h3>A Survey on Design-Space Dimensionality Reduction Methods for Shape Optimization</h3>
+        <p>A. Serani and M. Diez · Archives of Computational Methods in Engineering</p>
+      </div>
+      <a class="publication-link" href="https://doi.org/10.1007/s11831-025-10349-x">DOI <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="publication-item">
       <div class="publication-year">2023</div>
       <div class="publication-copy">
         <h3>Parametric model embedding</h3>
-        <p>A. Serani et al. · Computer Methods in Applied Mechanics and Engineering</p>
+        <p>A. Serani and M. Diez · Computer Methods in Applied Mechanics and Engineering, 404, 115776</p>
       </div>
       <a class="publication-link" href="https://doi.org/10.1016/j.cma.2022.115776">DOI <span aria-hidden="true">↗</span></a>
     </article>
   </div>
-  <p class="section-action"><a class="link-arrow" href="{{ '/html/publications.html' | relative_url }}">Browse publications <span aria-hidden="true">→</span></a></p>
+  <p class="section-link"><a href="{{ '/html/publications.html' | relative_url }}">All publications <span aria-hidden="true">→</span></a></p>
 </section>
 
-<section class="content-section" aria-labelledby="academic-work-title">
-  <div class="section-heading">
-    <div>
-      <p class="section-label">Academic work</p>
-      <h2 id="academic-work-title">Research is a shared practice</h2>
-    </div>
-    <p>Teaching and mentoring connect methodological work with the development of researchers and engineers across career stages.</p>
-  </div>
-
-  <div class="profile-grid">
-    <article class="profile-card">
-      <h3>Teaching &amp; mentoring</h3>
-      <p>Adjunct teaching at the University of Bologna and research mentoring across postdoctoral, PhD, MSc, and BSc work.</p>
-      <a class="link-arrow" href="{{ '/html/mentoring.html' | relative_url }}">Teaching and mentoring <span aria-hidden="true">→</span></a>
-    </article>
-    <article class="profile-card">
-      <h3>Academic profile</h3>
-      <p>Research appointments, international visits, education, professional links, and curriculum vitae.</p>
-      <a class="link-arrow" href="{{ '/html/experience.html' | relative_url }}">View experience <span aria-hidden="true">→</span></a>
-    </article>
-  </div>
+<section class="academic-section" aria-labelledby="activities-title">
+  <h2 id="activities-title">Honors, leadership &amp; professional activities</h2>
+  <dl class="activity-list">
+    <div><dt>2026</dt><dd><a href="https://www.inm.cnr.it/2026/07/15/andrea-serani-of-cnr-inm-receives-the-avt-young-contributor-award-spring-2026/">NATO STO AVT Young Contributor Award</a></dd></div>
+    <div><dt>Current</dt><dd>Co-Chair, NATO STO AVT-404 Research Task Group on Machine Learning and Artificial Intelligence for Vehicle Design</dd></div>
+    <div><dt>Since 2013</dt><dd>Contributor to international research activities of the NATO STO Applied Vehicle Technology Panel</dd></div>
+  </dl>
 </section>
 
-<section class="content-section" aria-labelledby="mao-title">
-  <div class="callout">
-    <div>
-      <p class="section-label">Research group</p>
-      <h2 id="mao-title">Multidisciplinary Analysis &amp; Optimization</h2>
-    </div>
-    <div>
-      <p>This is Andrea Serani’s personal academic website. Group people, institutional projects, collective publications, software, datasets, and opportunities are maintained on the separate MAO Research Group website.</p>
-      <p><a class="link-arrow" href="https://cnr-inm-mao.github.io/">Visit the MAO website <span aria-hidden="true">↗</span></a></p>
-    </div>
-  </div>
+<section class="academic-section" aria-labelledby="teaching-title">
+  <h2 id="teaching-title">Teaching &amp; mentoring</h2>
+  <h3>University of Bologna teaching</h3>
+  <p>Adjunct Professor for <a href="https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2026/507981">Computer-Aided Yacht Design</a> in the MSc programme in Nautical Engineering.</p>
+  <h3>Research mentoring</h3>
+  <p>Mentoring and co-supervision of postdoctoral researchers, research fellows, visiting scholars, PhD students, and MSc and BSc thesis work in computational design, optimization, machine learning, and marine engineering.</p>
+  <p class="section-link"><a href="{{ '/html/mentoring.html' | relative_url }}">Teaching and mentoring records <span aria-hidden="true">→</span></a></p>
 </section>

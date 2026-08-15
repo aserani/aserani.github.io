@@ -11,7 +11,7 @@ html_files = Dir.glob(site_root.join("**/*.html")).sort
 
 html_files.each do |file_name|
   file = Pathname.new(file_name)
-  content = file.read
+  content = File.read(file, encoding: "UTF-8")
 
   content.scan(/(?:href|src)\s*=\s*["']([^"']+)["']/i).flatten.each do |reference|
     next if reference.empty?
